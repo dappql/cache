@@ -1,6 +1,6 @@
 {
   "name": "@dappql/cache",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "useDapp extension to easily query smart-contracts - Cache Module",
   "keywords": [
     "useDapp",
@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc -b -w",
     "build": "tsc -b",
-    "ship": "npm run build && npm version patch && git push && npm publish"
+    "ship": "npm run build && npm version patch && git push && npm publish --access public"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
