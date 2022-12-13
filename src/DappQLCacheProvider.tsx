@@ -11,6 +11,7 @@ import {
 import { BigNumber } from 'ethers'
 
 import { COLLLECTION_NAME, DB_NAME, DB_VERSION } from './constants'
+import { CacheOptions, DBItem } from './types'
 
 type DBContextType = {
   set: (key: DBItem['key'], value: DBItem['value']) => Promise<boolean>

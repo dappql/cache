@@ -1,5 +1,6 @@
 import { useLookupAddress as useLookupAddressCore } from '@usedapp/core'
 
+import { CacheOptions } from '../types'
 import { useStaleData } from './useStaleData'
 
 export function useLookupAddress(

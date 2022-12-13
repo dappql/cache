@@ -3,6 +3,7 @@ import {
   useTokenAllowance as useTokenAllowanceCore,
 } from '@usedapp/core'
 
+import { CacheOptions, QueryEthAddress } from '../types'
 import { useStaleData } from './useStaleData'
 
 export function useTokenAllowance(

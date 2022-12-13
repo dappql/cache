@@ -8,6 +8,7 @@ import {
 import { TokenInfo } from '@usedapp/core/dist/esm/src/model/TokenInfo'
 import { Contract } from 'ethers'
 
+import { CacheOptions, QueryEthAddress } from '../types'
 import { useStaleData } from './useStaleData'
 
 // TODO:   Remove when useDapp deploys the version with this commit:

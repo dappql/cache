@@ -7,6 +7,7 @@ import {
 } from '@usedapp/core'
 import { Contract } from 'ethers'
 
+import { CacheOptions } from '../types'
 import { useStaleData } from './useStaleData'
 
 type CallResponse = CallResult<Contract, string>[]

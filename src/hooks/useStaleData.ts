@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { useCache } from '../DappQLCacheProvider'
+import { CacheOptions, DBItem } from '../types'
 
 export function useStaleData<T>(
   key: DBItem['key'],

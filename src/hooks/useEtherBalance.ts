@@ -3,6 +3,7 @@ import {
   useEtherBalance as useEtherBalanceCore,
 } from '@usedapp/core'
 
+import { CacheOptions, QueryEthAddress } from '../types'
 import { useStaleData } from './useStaleData'
 
 export function useEtherBalance(
