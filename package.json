@@ -1,6 +1,6 @@
 {
   "name": "@dappql/cache",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "useDapp extension to easily query smart-contracts - Cache Module",
   "keywords": [
     "useDapp",
