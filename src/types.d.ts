@@ -8,3 +8,5 @@ type CacheOptions = {
   disableCache?: boolean
   cacheExpiringTime?: number
 }
+
+type QueryEthAddress = string | false | 0 | undefined

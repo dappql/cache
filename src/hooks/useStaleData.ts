@@ -10,7 +10,6 @@ export function useStaleData<T>(
   cacheOptions: CacheOptions = {},
 ) {
   const [stale, setStale] = useState<T | undefined>(undefined)
-  console.log({ key, stale })
   const { get, set, setStaleStatus } = useCache()
 
   useEffect(() => {
@@ -23,7 +22,9 @@ export function useStaleData<T>(
         .then((staleData) => {
           if (staleData) {
             if (Array.isArray(value)) {
-              value.map((v, i) => (v?.value ? v : staleData.value[i])) as T
+              setStale(
+                value.map((v, i) => (v?.value ? v : staleData.value[i])) as T,
+              )
             } else {
               setStale(staleData.value as T)
             }

@@ -141,7 +141,7 @@ export default function DappQLCacheProvider(
         }
 
         request.onerror = () => {
-          reject(new Error('Unable to save data'))
+          reject(new Error('Unable to load data'))
         }
       })
     },
