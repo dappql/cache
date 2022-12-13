@@ -10,7 +10,7 @@ export function useStaleData<T>(
   cacheOptions: CacheOptions = {},
 ) {
   const [stale, setStale] = useState<T | undefined>(undefined)
-
+  console.log({ key, stale })
   const { get, set, setStaleStatus } = useCache()
 
   useEffect(() => {

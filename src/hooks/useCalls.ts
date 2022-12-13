@@ -19,7 +19,18 @@ export function useCalls(
   stale: boolean
   isLoading: boolean
 } {
-  const key = JSON.stringify({ calls, queryParams })
+  const callsIndex = JSON.stringify(
+    calls.map((c) =>
+      c
+        ? {
+            ...c,
+            contract: c.contract.address,
+          }
+        : undefined,
+    ),
+  )
+
+  const key = JSON.stringify({ callsIndex, queryParams })
 
   const value = useCallsCore(calls, queryParams) as CallResult<
     Contract,
