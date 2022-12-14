@@ -16,5 +16,9 @@ export function useCall<
   MN extends ContractMethodNames<T>,
 >(call: Call<T, MN> | Falsy, queryParams: QueryParams = {}) {
   const result = useCalls([call], queryParams)
-  return { ...result, value: result?.[0] }
+  return {
+    ...result,
+    value: result?.value?.[0]?.value,
+    error: result?.value?.[0]?.error,
+  }
 }
